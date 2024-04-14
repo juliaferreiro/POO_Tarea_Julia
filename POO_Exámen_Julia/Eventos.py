@@ -1,7 +1,7 @@
 class Evento:
-    def __init__(self, fecha, descripción):
+    def __init__(self, fecha, descripcion):
         self.fecha = fecha
-        self.descripción = descripción
+        self.descripcion = descripcion
 #Creo la clase y su constructor con el metodo init para inicializar.
     
 

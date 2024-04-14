@@ -5,7 +5,7 @@ class Examen(Evento):
         self.materia = materia
         self.complejidad = complejidad
     def __str__(self):
-        return ("Trabajo práctico de ", self.materia, ": " , self.descripción, ", fecha:" , self.fecha)
+        return f"Examen de: {self.materia}, descripción: {self.descripcion}, fecha: {self.fecha}, complejidad {self.complejidad} "
 
 #Creo las clases hijas con sus correspondientes atributos y metodos.
 #Agrego un método str para que me devuelva el resultado como quiero.

@@ -6,7 +6,7 @@ from Agendas import Agenda
 #Importo la clase evento
 Evento1 = Evento("", "")
 agenda = Agenda()
-#Creo un objeto vacío
+#Creo dos objetos vacío
 print("Bienvenido a la agenda")
 hacer = int(input("Ingresa que quieres hacer, 1 para agregar, 2 para mostrar, 3 para eliminar y 4 para salir "))
 while hacer < 4:
@@ -33,9 +33,11 @@ while hacer < 4:
         agenda.mostrar_eventos()
 
     if hacer == 3:
+        agenda.mostrar_fecha_descripcion()
         eventoSeleccionadoFecha = str(input("Ingresa la fecha del evento que queres eliminar "))
         eventoSeleccionadoDescripcion = str(input("Ingresa la descripcion del evento que queres eliminar "))
         eventoaeliminar = Evento(eventoSeleccionadoFecha, eventoSeleccionadoDescripcion)
         agenda.eliminar(eventoaeliminar)
     hacer = int(input("Ingresa que quieres hacer, 1 para agregar, 2 para mostrar, 3 para eliminar y 4 para salir "))
 
+print ("Gracias por utilizar nuestro programa :3")
